@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join My Program</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #000;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 40px 20px;
+      text-align: center;
+      z-index: 100;
+      box-shadow: 0 3px 10px rgba(255,255,255,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #fff;
+      text-shadow: 1px 1px 5px #444;
+      transition: 0.3s;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+
+    /* Section Animations */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Bio Section */
+    .bio {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+    }
+
+    .bio h2 {
+      margin-top: 0;
+      color: #fff;
+      font-size: 2em;
+    }
+
+    /* Contact Section */
+    .contact {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .contact a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .contact a:hover {
+      color: #aaa;
+    }
+
+    /* Donate Buttons */
+    .donate-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+
+    .donate-buttons a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1 1 200px;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      border-radius: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .donate-buttons a img {
+      height: 25px;
+      width: 25px;
+      margin-right: 10px;
+    }
+
+    .donate-buttons a.venmo { background-color: #3d95ff; }
+    .donate-buttons a.cashapp { background-color: #00c853; }
+    .donate-buttons a.instagram { background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); }
+    .donate-buttons a.facebook { background-color: #1877f2; }
+
+    .donate-buttons a:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    /* MP3 Section */
+    .music {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 15px;
+      margin-bottom: 50px;
+      box-shadow: 0 10px 30px rgba(255,255,255,0.1);
+      text-align: center;
+    }
+
+    .music h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .music audio {
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111;
+      color: #aaa;
+      border-top: 1px solid #333;
+    }
+
+    /* Responsive for phone */
+    @media(max-width: 600px){
+      header h1 { font-size: 2em; }
+      .donate-buttons { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Join My Student Program!</h1>
+  </header>
+
+  <div class="container fade-in">
+    <div class="bio">
+      <h2>About Me</h2>
+      <p>Hello! I'm [Your Name], passionate about helping students grow and succeed. I specialize in [your skills/program]. Join my program and unlock your full potential with guidance, mentorship, and a supportive community!</p>
+    </div>
+
+    <div class="contact">
+      <p>📞 Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+      <p>✉️ Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>📸 Instagram: <a href="https://instagram.com/yourusername" target="_blank">@yourusername</a></p>
+      <p>📘 Facebook: <a href="https://facebook.com/yourusername" target="_blank">Your Page</a></p>
+    </div>
+
+    <div class="donate-buttons">
+      <a href="https://venmo.com/YOURUSERNAME" target="_blank" class="venmo">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/venmo.svg" alt="Venmo Logo">Venmo
+      </a>
+      <a href="https://cash.app/$YOURUSERNAME" target="_blank" class="cashapp">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/cashapp.svg" alt="CashApp Logo">CashApp
+      </a>
+      <a href="https://instagram.com/yourusername" target="_blank" class="instagram">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram Logo">Instagram
+      </a>
+      <a href="https://facebook.com/yourusername" target="_blank" class="facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook Logo">Facebook
+      </a>
+    </div>
+
+    <div class="music fade-in">
+      <h2>Listen to My Playing</h2>
+      <audio controls>
+        <source src="track1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <audio controls>
+        <source src="track2.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 [Your Name]. All rights reserved.
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const options = { threshold: 0.3 };
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+    faders.forEach(fader => observer.observe(fader));
+  </script>
+</body>
+</html>
